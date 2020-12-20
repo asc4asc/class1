@@ -22,13 +22,12 @@ test me please: <p id="demo"></p>
     
 <script>
 class Structi {
-  constructor(i=1) {    
-    this.i=i;
+  constructor() {    
     this.s="";
   }
   doit(i) {
     //for (this.i=0; this.i<10; this.i++) { 
-      this.s = "Hello JavaS"+this.i+"<br>"+this.s; 
+      this.s = "Hello JavaS"+i+"<br>"+this.s; 
       document.getElementById("demo").innerHTML = this.s;
       console.log("Hello JavaScript!",i,"\n");
     //}
