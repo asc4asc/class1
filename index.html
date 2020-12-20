@@ -26,17 +26,19 @@ class Structi {
     this.i=i;
     this.s="";
   }
-  doit() {
-    for (this.i=0; this.i<10; this.i++) { 
+  doit(i) {
+    //for (this.i=0; this.i<10; this.i++) { 
       this.s = "Hello JavaS"+this.i+"<br>"+this.s; 
       document.getElementById("demo").innerHTML = this.s;
-      console.log("Hello JavaScript!",this.i,"\n");
-    }
+      console.log("Hello JavaScript!",i,"\n");
+    //}
   }
-};    
-  
+};       
 var tst1 = new Structi();
-tst1.doit();
+let i;    
+for (i=0; i<10; i++) { 
+  tst1.doit(i);
+}
     
 </script> 
     
